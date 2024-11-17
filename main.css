@@ -1,0 +1,422 @@
+        /*variables*/
+        :root {
+            --websiteHeaderHeight:38px;
+        }
+
+        /* General Page Styling */
+        body {
+            margin: 0;
+            padding: 5px;
+            font-family:"Quicksand", sans-serif;
+            background-color: #ffffff;
+            font-style: normal;
+            line-height: 1.5;
+            color: #18332e;
+        }
+
+        /*ESTANDAR DE ESTILOS*/
+        .text-style-main {
+            font-family: "Style Script", sans-serif;
+        }
+
+
+        .t-center {
+            text-align: center;
+        }
+
+        
+        .t-size-normal {
+            font-size: x-large;
+        }
+
+        .t-size-larger {
+            font-size: xxx-large;
+        }
+        
+        .m20-0 {
+            margin: 20px 0px;
+        }
+        .m0 {
+            margin: 0px;
+        }
+
+        .pl10{
+            padding-left: 10px;
+        }
+
+        .p10{
+            padding: 10px;
+        }
+        .pt10{
+            padding-top: 10px;
+        }
+        .p0{
+            padding: 0px;
+        }
+
+        .new-section{
+            padding-top: 10px;
+        }
+
+        .image-container img{
+            height: 85%;
+            width: 85%;
+            object-fit: contain;
+        }
+
+        .max-wh500{
+            max-width: 500px;
+        }
+
+        button{
+            font-family: 'Belleza';
+            padding: 10px;
+            background-color: #18332e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+
+        /**** ESTILOS ESPECIFICOS ****/
+        /* Top Bar */
+        .top-bar {
+            background-color: #18332e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: var(--websiteHeaderHeight);
+            z-index: 1000; /* Ensures it's above other elements */
+            cursor: pointer;
+            object-fit: contain;
+        }
+
+        .top-bar img{
+            height: 100%;
+            width: auto;
+            aspect-ratio: 1/1;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #18332e;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            top: 50px; /* Positioned below the top-bar */
+            z-index: 1000;
+        }
+
+        .nav-bar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #444;
+        }
+
+
+        /* Main Content */
+        .main-content {
+            text-align: center;
+            padding: 120px 20px 20px; /* Added top padding to avoid overlap with fixed bars */
+        }
+
+        .main-content h1 {
+            font-size: 50px;
+        }
+
+        .main-content h2 {
+            font-size: 27px;
+            color: #333;
+            font-weight: lighter;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-color-names-main{
+            color: #6b540f;
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+        }
+
+        .layout-wrapper {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0px;
+            padding-top: calc(var(--websiteHeaderHeight)+120px);
+            height: calc(100% - var(--websiteHeaderHeight));
+        }
+
+        .layout_main_izq {
+            padding: 20px;
+            text-align: left;
+        }
+        .layout-main-drc{
+            padding: 20px;
+            top: 100px;
+            box-sizing: border-box;
+        }
+
+        .layout_main_image{
+            position: sticky;
+            z-index: 1;
+            top: 200px;
+        }
+        .div_image_principal {
+            background: url(./img/Nosotros.png) no-repeat center center;
+            background-size: cover;
+            background-position: top center;
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+        .separador {
+            margin: 20px 0;
+            border: 1px solid;
+            width: 10%;
+        }
+
+        .detalles-boda{
+            text-align: left;
+            align-items: center;
+        }
+        .icono-wrapper{
+            position: relative;
+            height: auto;
+        }
+        .div-centered{
+            width:100%;
+            display: flex;
+            justify-content: center;
+        }
+        .icono-horario{
+            width: 36px;
+            height: 36px;
+            padding: 10px;
+            position: absolute;
+            top: 0px;
+            top: 0px;
+        }
+        #circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgb(205, 205, 205);
+            position:absolute;
+            top:0px;
+            left: 0px;
+            padding: 10px;
+        }
+        .item-grid-horario {
+            display: grid;
+            width: 570px;
+            padding-left: 15px;
+            grid-template-columns: 1fr 5fr;
+        }
+        .item-grid-horario-desc{
+            max-width: 500px;
+            border-radius: 5px;
+            background-color: rgb(205, 205, 205);
+        }
+        .item-grid-hotel {
+            display: grid;
+            width: 570px;
+            padding-left: 15px;
+            grid-template-columns: 1fr 5fr;
+        }
+        .item-grid-hotel-details{
+            
+            border-color: black;
+            border-left: 1px solid #000;
+            max-width: 500px;
+        }
+
+        .foto-pie-pagina{
+            height: 350px;
+        }
+
+        .foto-pie-pagina img{
+            width: 100%;
+            height: auto;
+            object-fit:cover;
+            aspect-ratio: 1/1;
+        }
+
+        .footer{
+            display: flex;
+            color: white;
+            background-color: #18332e;
+            text-align: center;
+            font-family: "Style Script", sans-serif;
+            justify-content: space-between;
+        }
+
+        .footer-names{
+            font-size: xx-large;
+            margin: 0px;
+        }
+        .footer-date{
+            font-family:"Quicksand", sans-serif;
+            padding-bottom: 5px;
+        }
+
+        .footer img{
+            padding: 10px;
+            height: 80px;
+            aspect-ratio: 1/1;
+        }
+        /* Media Queries for Mobile View (max-width: 700px) */
+        @media (max-width: 700px) {
+            /* Show the hamburger icon on smaller screens */
+            .menu-icon {
+                
+                display: block;
+                height: 50px;
+                position: fixed;
+                font-size: 30px;
+                color: #18332e;
+                text-align: center;
+                padding: 0px;
+                margin-right: 5px;
+                cursor: pointer;
+                top: 0;
+                width: 100%;
+                z-index: 1001; /* Higher than nav-bar */
+            }
+            .menu-icon-border{
+                margin-right: 10px;
+                background-color: #18332e;
+
+            }
+            .menu-icon-hamburger {
+                position: absolute;
+                padding-left: 5px;
+                height: 50px;
+            }
+            .menu-icon-hamburger img {
+                padding: 6px;
+            }
+
+            .menu-icon-logo{
+                align-content: center;
+                width: 100%;
+                height: 50px;
+            }
+            .menu-icon-logo img{
+                height: 40px;
+                padding: 5px;
+                aspect-ratio: 1/1;
+            }
+
+            .top-bar{
+                display:none;
+            }
+
+            /* Hide the navigation bar by default on mobile */
+            .nav-bar {
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 45px; /* Below the menu icon */
+            }
+
+            .nav-bar.active {
+                display: flex;
+            }
+
+            .nav-bar a {
+                padding: 10px;
+                border-top: 1px solid #444;
+                border-bottom: 1px solid #444;
+            }
+
+            h1{
+                margin-top: 10px;
+            }
+            .main-content h1 {
+                font-size: 45px;
+            }
+
+            .main-content h2 {
+                font-size: 24px;
+            }
+
+            
+            /* Adjust main content padding for mobile */
+            .main-content {
+                padding-top: 50px;
+            }
+
+            .layout-wrapper{
+                grid-template-columns: repeat(1,1fr);
+                //*grid-template-rows: auto auto;
+                display: block;*/
+            }
+
+            .layout-main-drc{
+                order: -1;
+            }
+
+            .layout_main_image{
+
+                top: 100px;
+            }
+
+            .comollegar-item{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .foto-pie-pagina{
+                height: 180px;
+            }
+        }
+
+        /* Ensuring nav-bar is always shown on larger screens (min-width: 701px) */
+        @media screen and (min-width: 701px) {
+            .nav-bar {
+                display: flex;
+                justify-content: center;
+                top: 50px; /* Below the top-bar */
+            }
+            .menu-icon {
+                display: none; /* Hide the menu icon on larger screens */
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .layout--split .layout__main {
+                padding-top: calc(var(--websiteHeaderHeight) + 120px);
+                gap: 20px;
+            }
+        }
+
+
+
+        
+        
+        

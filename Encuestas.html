@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script>
+
+        function goToHome(){
+
+            window.location.href = "./Web.html";
+        }
+                // Function to toggle the navigation menu on mobile
+                function toggleMenu() {
+            var navBar = document.getElementById('nav-bar');
+            navBar.classList.toggle('active');
+        }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Estíbaliz & Joaquin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+<body>
+
+    <!-- Top Bar with E+J logo -->
+    <div class="top-bar text-style-main" onclick="showSection('NuestraBoda-section')">
+            <img src="../img/Logo-sin-fondo.svg"/>
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar text-style-secondary" id="nav-bar">
+        <a class="nav-NuestraBoda-section" href="javascript:void(0)" onclick="goToHome()">¡Nuestra Boda!</a>
+        <a class="nav-Encuestas-section">Encuestas</a>
+    </div>
+
+    <!-- Hamburger Menu Icon for Mobile -->
+    <div class="menu-icon" >
+        <div class="menu-icon-border">
+        <div class="menu-icon-hamburger" onclick="toggleMenu()">
+            <img src="../img/menu-hamburguesa.png"/>
+        </div>
+        <div class="menu-icon-logo">
+            <img src="../img/Logo-sin-fondo.svg"/>
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="main-content encuesta m0" id="Encuestas-section">
+        <div class="new-section">
+            <h1 class="t-center text-style-main t-size-larger m0 pt10">Confirma tu asistencia</h1>
+            <p class="t-center">Si vas a venir a nuestra boda, por favor, rellena una encuesta por cada persona para asegurarnos las alergias alimenticias:</p>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfW2R6-drnSE_UjuB4bCci908KvC-Cd1QGMiyG1ZCV2BK50ew/viewform?embedded=true" width="400" height="1700" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+        <div>
+            
+            <h1 class="t-center text-style-main t-size-larger m0 pt10">¿Harás uso del autobús?</h1>
+            <p class="t-center">Si vas a venir a nuestra boda, y vas a hacer uso del autobús, ayúdanos a planificarnos rellenando la siguiente encuesta:</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSda868WQWgM11JRPRKkAxgtBm23uzrWUxqMJBgGz4L_PcImVQ/viewform?embedded=true" width="450" height="1500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+    <div class="footer">
+        <div>
+            <img src="../img/Logo-sin-fondo.svg"/>
+        </div>
+        <div>
+            <p class="footer-names">Estíbaliz y Joaquín</p>
+            <p class="footer-date">10 Mayo 2025</p>
+        </div>
+        <div>
+            <img src="../img/Logo-sin-fondo.svg"/>
+        </div>
+    </div>
+
+</body>
+</html>
