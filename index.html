@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Estíbaliz & Joaquin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+<body>
+
+    <!-- Top Bar with E+J logo -->
+    <div class="top-bar text-style-main" onclick="showSection('NuestraBoda-section')">
+            <img src="../img/Logo-sin-fondo.svg"/>
+    </div>
+
+    <!-- Hamburger Menu Icon for Mobile -->
+    <div class="menu-icon" >
+        <div class="menu-icon-border">
+        <div class="menu-icon-hamburger" onclick="toggleMenu()">
+            <img src="../img/menu-hamburguesa.png"/>
+        </div>
+        <div class="menu-icon-logo">
+            <img src="../img/Logo-sin-fondo.svg"/>
+            
+        </div>
+    </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar text-style-secondary" id="nav-bar">
+        <a class="nav-NuestraBoda-section" href="javascript:void(0)" onclick="scrollToSection('NuestraBoda-section')">¡Nuestra Boda!</a>
+        <a class="nav-LosDetalles-section" href="javascript:void(0)" onclick="scrollToSection('LosDetalles-section')">Programación de la boda</a>
+        <a class="nav-ComoLlegar-section" href="javascript:void(0)" onclick="scrollToSection('ComoLlegar-section')">¿Cómo llegar?</a>
+        <a class="nav-DondeAlojarte-section" href="javascript:void(0)" onclick="scrollToSection('DondeAlojarte-section')">¿Dónde alojarse?</a>
+        <a class="nav-Dresscode-section" href="javascript:void(0)" onclick="scrollToSection('Dresscode-section')">Código de vestimenta</a>
+        <a class="nav-Encuestas-section" href="javascript:void(0)" onclick="scrollToSection('Encuestas-section')">Confirmación</a>
+        <a class="nav-ListaBodas-section" href="javascript:void(0)" onclick="scrollToSection('ListaBodas-section')">Lista de bodas</a>
+    </div>
+
+    <div id="apartado-informativo">
+    <!-- Bienvenidos Section -->
+    <div class="main-content" id="NuestraBoda-section">
+        <div class="layout-wrapper">
+            <div class= "layout_main_izq">
+                <h1 class="text-style-main t-center text-color-names-main">Estíbaliz y Joaquín</h1>
+                <hr class="separador">
+                <div class="t-size-normal">
+                <p>¡NOS CASAMOS!</p>
+                <p class="m20-0 t-size-larger">10 Mayo 2025</p>
+                <p>SANTANDER, CANTABRIA</p>
+                </div>
+                <hr class="separador">
+                <h2 class="t-center">¡BIENVENIDOS A NUESTRA BODA!</h2>
+                <p>Después de 10 años juntos, compartiendo momentos, sueños e historias inolvidables, estamos listos para escribir las páginas más especiales de nuestra historia.</p>
+                <p>Os invitamos a prepararos para este viaje: poneros guap@s 🤳🙌 y subid a bordo. Imprescindible traer ganas de disfrutar, reir y pasarlo bien ¡Qué se viene fiesta! 💃🕺</p>
+                <p>Aquí encontraréis toda la información necesaria para acompañarnos en nuestro gran día: Programación de la boda, horarios, ubicaciones, recomendaciones y mucho más.</p>
+                <p>Ya solo nos falta decir... ¡Pasajeros al tren! 🚂</p>
+            </div>
+            <div class="layout-main-drc">
+                <div class="layout_main_image">
+                    <div class="div_image_principal"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- SECCIÓN PROGRAMACIÓN DE LA BODA --------------------->
+    <div class="detalles-boda new-section" id="LosDetalles-section">
+        <h1 class="t-center text-style-main t-size-larger">Programación De La Boda</h1>
+        <div class="div-centered">
+            <div class="salida-bus-1 item-grid-horario">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/autobus-alternativo.svg">
+                </div>
+                <div class="item-grid-horario-desc">
+                    <P class="pl10">  <strong>  10:00</strong> -  Salida de autobús desde Bilbao
+                    </P>
+                    <p class="t-center">  (pendiente de confirmar ubicación)</p>
+                </div>
+            </div>
+        </div>
+        <p> </p>        
+        <div class="div-centered">
+            <div class="salida-bus-1 item-grid-horario">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/autobus-alternativo.svg">
+                </div>
+                <div class="item-grid-horario-desc">
+                    <P class="pl10">  <strong>  10:20</strong> -  Salida de autobús desde Santurtzi
+                    </P>
+                    <p class="t-center">  (pendiente de confirmar ubicación)</p>
+                </div>
+            </div>
+        </div>
+        <p> </p>        
+        <div class="div-centered">
+            <div class="salida-bus-1 item-grid-horario">
+                
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/anillos-boda.svg">
+                </div>
+                <div class="item-grid-horario-desc">
+                    <P class="pl10">  <strong>  11:45</strong> -  Ceremonia en el Palacio de la Magdalena
+                    </P>
+                    <p></p>
+                    <p class="p10 t-center">
+                        Una vez finalizada la ceremonia se dispondrán autobuses para ir desde el propio Palacio de la Magdalena hasta la Huerta de Cubas</p>
+                </div>
+            </div>
+        </div>
+        <p> </p>        
+        <div class="div-centered">
+            <div class="salida-bus-1 item-grid-horario">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/comer-plato.svg">
+                </div>
+                <div class="item-grid-horario-desc">
+                    <P class="pl10"> <strong>  14:00</strong> -  ¡Bienvenidos al banquete! </P>
+                    <p></p>
+                    <p class="p10 t-center">¡Listos para la fiesta! Comida, música, barra libre, recena...</p>
+                </div>
+            </div>
+        </div>
+        <p> </p>        
+        <div class="div-centered">
+            <div class="salida-bus-1 item-grid-horario">
+                <div class="icono-wrapper">
+                    
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/autobus-alternativo.svg">
+                </div>
+                <div class="item-grid-horario-desc">
+                    <P class="pl10"> <strong>  00:15</strong> -  Autobuses de vuelta para Bilbao y Santander</P>
+                    <p></p>
+                    <p class="p10 t-center">
+                        ¡Aprovéchalos! Así no os tendréis que preocupar del coche</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- SECCIÓN COMO LLEGAR--------------------->
+    <div class="como-llegar-boda new-section" id="ComoLlegar-section">
+        
+        <h1 class="t-center text-style-main t-size-larger">¿Cómo Llegar?</h1>
+        
+        <div class="layout-wrapper">
+            <div class= "layout_comollegar_izq">
+                <h1 class="t-center">Lugar de la ceremonia</h1>
+                <h2 class="t-center t-">Palacio de la Magdalena</h2>
+                <p class="t-center t-size-normal m0">11:45</p>
+                <div class="image-container div-centered p10 comollegar-item">
+                    <img src="../img/PalacioMagdalena.jpg"/>
+                </div>
+            <div class="div-centered p10 comollegar-item">
+                <iframe id="map-canvas" class="map_part" width="80%" height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="1" 
+                src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. de la Magdalena, 1, 39005 Santander, Cantabria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+        <div class="layout_comollegar_drch">
+                <h1 class="t-center">Lugar del banquete</h1>
+                <h2 class="t-center t-">Huerta de cubas</h2>
+                <p class="t-center t-size-normal m0">14:00</p>
+                <div class="image-container div-centered p10 comollegar-item">
+                    <img src="../img/Huerta de cubas.jpg"/>
+                </div>
+                <div class="div-centered p10 comollegar-item">
+                    <iframe id="map-canvas" class="map_part" width="80%" height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="1" 
+                    src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=La huerta de cubas, Barrio la polvorosa, 39793 Cubas, Cantabria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+        </div>
+    </div>
+
+    
+            
+    <!-- SECCIÓN DONDE ALOJARTE --------------------->
+    <div class="dresscode-boda new-section" id="DondeAlojarte-section">
+        <h1 class="t-center text-style-main t-size-larger">¿Dónde alojarse en Santander?</h1>
+        <h2 class="t-size-normal t-center m0">Zona centro</h2>
+        <div class="div-centered p0">
+            <hr class="separador"/>
+        </div>
+        
+        <p> </p>
+        <p class="t-center">Cerca del jaleo santanderino (Cañadio) y con la mayoría de servicios y actividades. Esta zona está cerca de la estación de tren y estación de autobuses.</p>
+    
+        <div class="div-centered">
+            <div class="item-grid-hotel">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/dormitorio.svg">
+                </div>
+                <div>
+                    <p><strong>Hotel Bahía</strong></p>
+                    <div class="item-grid-hotel-details">
+                        <P class="pl10"> Habitación doble con vistas al mar: 117,90€ por noche</P>
+                        <p class="pl10"> Para reservar: enviar email a hotelbahia@sardinerohoteles.com o por teléfono (942205000) indicando el código: 428330 BLOQUEO ENLACE ESTÍBALIZ Y JOAQUÍN </p>
+                        <p class="pl10"> Fecha límite para hacer uso del descuento: 15 de diciembre.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="div-centered">
+            <div class="item-grid-hotel">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/dormitorio.svg">
+                </div>
+                <div>
+                    <p><strong>Hotel Silken Coliseum</strong></p>
+                    <div class="item-grid-hotel-details">
+                        <P class="pl10">  10% descuento según precio de mercado a través de su web </P>
+                        <p class="pl10"> Para reservar: entrar en su página web y utilizar el código BODAEYJ10 </p>
+                        <p class="pl10"> Fecha límite para hacer uso del descuento: 9 de abril.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-centered">
+            <div class="item-grid-hotel">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/dormitorio.svg">
+                </div>
+                <div>
+                    <p><strong>Hotel NH Ciudad de Santander</strong></p>
+                    <div class="item-grid-hotel-details">
+                        <P class="pl10"> Habitación Doble - Noche viernes 108€ y noche sábado 117€</P>
+                        <p class="pl10"> Para reservar: enviar email a mp.onandia@nh-hotels.com o por teléfono (942319900) indicando que sois invitados de la boda de Estíbaliz y Joaquín. </p>
+                        <p class="pl10"> Fecha límite para hacer uso del descuento: 9 de marzo.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="div-centered p0">
+            <hr class="separador"/>
+        </div>
+        <h2 class="t-size-normal t-center m0">Zona Sardinero</h2>
+        <div class="div-centered p0">
+            <hr class="separador"/>
+        </div>
+        <p> </p>
+        <p class="t-center">Zona tranquila y con un largo paseo por sus principales playas, sin duda, es una de las zonas más bonitas de Santander.</p>
+        <div class="div-centered">
+            <div class="item-grid-hotel">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/dormitorio.svg">
+                </div>
+                <div>
+                    <p><strong>Hotel Chiqui</strong></p>
+                    <div class="item-grid-hotel-details">
+                        <P class="pl10"> Precio (2 noches) con desayuno incluido 105€/noche</P>
+                        <p class="pl10"> Para reservar: enviar email a recepcion@hotelchiqui.com indicando el código GRUPO BODA ESTIBALIZ Y JOAQUIN </p>
+                        <p class="pl10"> Fecha límite para hacer uso del descuento: 10 de abril.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="div-centered">
+            <div class="item-grid-hotel">
+                <div class="icono-wrapper">
+                    <div id="circle"></div>
+                    <img class="icono-horario" src="../img/dormitorio.svg">
+                </div>
+                <div>
+                    <p><strong>Le Petit Boutique</strong></p>
+                    <div class="item-grid-hotel-details">
+                        <P class="pl10"> Descuento 10€ según precio de mercado</P>
+                        <p class="pl10"> Para reservar: entrar en su página web y utilizar el código "estibalizjoaquin" </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="t-center">
+        Y os preguntaréis, ¿Desde dónde es más cómodo llegar al Palacio de la Magdalena? Es indiferente porque las distancias son cortas, así que nuestra recomendación es que vayáis en taxi desde vuestro hotel. Os dejarán en la misma puerta del Palacio 😉.
+        </p>
+        <p class="t-center">En general, Santander es una ciudad pequeña y segura. Si encontráis algún alojamiento adicional o tenéis dudas de su ubicación ¡Escribidnos o llamarnos y os ayudaremos a encontrar vuestro alojamiento!</p>
+    </div>
+        
+            
+    <!-- SECCIÓN DRESSCODE--------------------->
+    <div class="dresscode-boda new-section" id="Dresscode-section">
+        <h1 class="t-center text-style-main t-size-larger">Código De Vestimenta</h1>
+    </div>
+    <p class="t-center">La boda tiene código de vestimenta semi-formal, por lo que a continuación os incluimos unos tips que pueden ayudaros a encontrar vuestro conjunto o traje ideal para el evento.
+    </p>
+        
+
+    <h2 class="t-size-normal t-center m0">💃 - Para las mujeres - 💃</h2>
+    <div class="div-centered p0">
+        <hr class="separador"/>
+    </div>
+    <p class="t-center m0">✔️ Es una boda de día y de primavera así que hay muchas opciones. Vestido corto, midi o largo, traje de falda y chaqueta o pantalón y chaqueta, pantalones largos o faldas acompañados con blusas.
+    </p>
+        <p class="t-center">❌ No están permitidos los colores: blanco, beige o champán, y tampoco recomendamos un look completo negro.</p>
+
+    <h2 class="t-size-normal t-center m0">🕺 - Para los hombres - 🕺</h2>
+    <div class="div-centered p0">
+        <hr class="separador"/>
+    </div>
+    <p class="t-center m0">✔️ Nuestra recomendación principal es llevar traje, puedes llevarlo como más te guste, con chaleco, corbata, pajarita, tirantes o sin ellos. Otra opción ideal es llevar pantalón arreglado, camisa y americana.
+    </p>
+        <p class="t-center">❌ No está permitido el uso de frac, chaqué, pantalones vaqueros o similar.</p>
+
+    <h2 class="t-size-normal t-center m0">👦🧒 - Niños/as - 👦🧒</h2>
+    <div class="div-centered m0">
+        <hr class="separador"/>
+    </div>
+    <p class="t-center m0">No hay código estricto en este sentido, que vayan tan guap@s como suelen ir.</p>
+    </div>
+    <p>  </p>
+    <p class="t-center m0 pt10">Os dejamos unos ejemplos aleatorios en la siguiente imagen:</p>
+    <div class="image-container div-centered">
+        <img src="../img/hombres-mujeres-ropa.jpg">
+    </div>
+
+    <!----SECCIÓN CONFIRMACIÓN ASISTENCIA-->
+    <div class="encuesta new-section m0" id="Encuestas-section">
+        <h1 class="t-center text-style-main t-size-larger m0">Confirmar asistencia</h1>
+        <p class="t-center"> Para confirmar tu asistencia, identificar alérgenos, o ayudarnos a planificar los autobuses hemos preparado los siguientes formularios. ¡Rellénalos y ayudanos a planificar nuestra boda! </p>
+        <div class="div-centered">
+            <button class="t-size-normal" onclick="habilitarEncuestas()"> Ir a formularios</button>
+        </div>
+    </div>
+
+
+        <!-- SECCIÓN LISTA DE BODAS--------------------->
+        <div class="lista-boda new-section m0 " id="ListaBodas-section">
+            <h1 class="t-center text-style-main t-size-larger m0 pt10">Lista de bodas</h1>
+        </div>
+        <div class="div-centered">
+            <img src="../img/regalo.svg" width="40"/>
+            <p class="t-center max-wh500"> Para nosotros lo más importante es vuestra asistencia. Pero si queréis tener algún detalle con nosotros, os dejamos nuestro número de cuenta:        </p>
+        </div>
+        <div class="div-centered">
+            <p class="t-center"> <strong>ES64 0182 1294 1102 0212 5345 </strong></p>
+        </div>
+
+    </div>
+    <div class="div-centered foto-pie-pagina">
+        <img src="../img/PiePagina.jpg"/>
+    </div>
+
+    <div class="footer">
+        <div>
+            <img src="../img/Logo-sin-fondo.svg"/>
+        </div>
+        <div>
+            <p class="footer-names">Estíbaliz y Joaquín</p>
+            <p class="footer-date">10 Mayo 2025</p>
+        </div>
+        <div>
+            <img src="../img/Logo-sin-fondo.svg"/>
+        </div>
+    </div>
+
+    <script>
+
+        // Function to toggle the navigation menu on mobile
+        function toggleMenu() {
+            var navBar = document.getElementById('nav-bar');
+            navBar.classList.toggle('active');
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            var navBar = document.getElementById('nav-bar');
+            navBar.classList.toggle('active');
+        }
+        function habilitarEncuestas(){
+            
+            window.location.href = "./Encuestas.html";;
+        }
+
+    </script>
+
+</body>
+</html>
+
